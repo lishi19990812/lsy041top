@@ -41,6 +41,195 @@ Quote by 041专属
 		a:hover{cursor:url(css/pointer.cur),pointer;}//链接选择效果
 		</style>
     </head>
+<!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
+<!--这部分是字体-->
+<style>@font-face{font-family: 'zti';src: url('https://www.lsy041.cf/字体/小可爱.ttc');}body{font-family:'zti' !important;}</style>
+<!--社会主义核心价值观-->
+<script >var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("🍉富强🍉","🎉虎虎生威🎉","🍉民主🍉","🍉文明🍉","🧧恭喜发财🧧","🎉金虎送福🎉","🍉和谐🍉","🍉自由🍉","🍉平等🍉","🎉龙腾虎跃🎉","🙈关注关注🙈","🍉公正🍉","🍉法治🍉","🍉欢迎光临🍉","🍉爱国🍉","🍉诚信🍉","🍉友善🍉");var b = new Array("red","blue","yellow","green","pink","blue","orange");var $i = $("<span/>").text(a[a_idx]);a_idx = (a_idx + 1) % a.length;b_idx = (a_idx+1)%7;var x = e.pageX,y = e.pageY;$i.css({"z-index": 9999,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": b[b_idx]});$("body").append($i);$i.animate({"top": y - 180,"opacity": 0},1500,function() {$i.remove();});});});</script>
+<!--顶部标题-->
+<script>
+var OriginTitile = document.title,
+titleTime;
+document.addEventListener("visibilitychange",
+function() {
+    if (document.hidden) {
+        document.title = "你别走吖~ Σ(っ °Д °;)っ";
+        clearTimeout(titleTime)
+    } else {
+        document.title = "欢迎回来！(/≧▽≦/)o" ;
+        titleTime = setTimeout(function() {
+            document.title = OriginTitile
+        },
+        2000)
+    }
+});
+</script>
+<!--禁用开发者模式js-->
+<script disable-devtool-auto src='https://www.lsy041.cf/style/js/disable-devtool.min.js'></script>
+<!--禁用开发者模式-->
+<script>
+//调用开发者debugger模式
+setInterval(function () {
+            check()
+        }, 1000);
+        var check = function () {
+            function doCheck(a) {
+                if (("" + a / a)["length"] !== 1 || a % 20 === 0) {
+                    (function () { }
+                    ["constructor"]("debugger")())
+                } else {
+                    (function () { }
+                    ["constructor"]("debugger")())
+                }
+                doCheck(++a)
+            }
+            try {
+                doCheck(0)
+            } catch (err) { }
+        };
+        check(); 
+//打开开发者模式直接跳转|ps：如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面
+/*var h = window.innerHeight,
+            w = window.innerWidth;
+        window.onresize = function () {
+            if (h != window.innerHeight || w != window.innerWidth) {
+                window.location = "https://lsy041.com/404.html";
+            }
+        };
+//监视DOM修改|ps:只要修改页面元素我就重新加载（不支持IE9以下浏览器）
+
+if (window.addEventListener) {
+            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
+            window.addEventListener("DOMAttributeNameChanged", function () { window.location.reload(); }, true);
+            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
+            window.addEventListener("DOMElementNameChanged", function () { window.location.reload(); }, true);
+            window.addEventListener("DOMNodeInserted", function () { window.location.reload(); }, true);
+            window.addEventListener("DOMNodeInsertedIntoDocument", function () { window.location.reload(); }, true);
+            window.addEventListener("DOMNodeRemoved", function () { window.location.reload(); }, true);
+            window.addEventListener("DOMNodeRemovedFromDocument", function () { window.location.reload(); }, true);
+            window.addEventListener("DOMSubtreeModified", function () { window.location.reload(); }, true);
+        }
+*/
+</script>
+<!--这部分是禁止F12-->
+<!--<script src="style/js/vue.js"></script>
+<script src="style/F12.js"></script>
+<link rel="stylesheet" href="style/css/F12.css">
+<script>document.onkeydown = function () {
+if (window.event && window.event.keyCode == 123) {
+  event.keyCode = 0;
+  event.returnValue = false;
+    new Vue({
+            data:function(){
+                this.$notify({
+                    title:"嘿！别瞎按",
+                    message:"抓到你了！",
+                    position: 'bottom-right',
+                    offset: 50,
+                    showClose: false,
+                    type:"error"
+                });
+                return{visible:false}
+            }
+        })
+  return false;}};</script>
+ -->
+<!--这部分是禁止网页右键，不需要的话自己删掉-->
+<!--
+<script> 
+function stop(){ 
+return false; 
+} 
+document.oncontextmenu=stop; 
+
+	function click(e) {
+		if (document.layers) {
+			if (e.which == 3) {
+				oncontextmenu='return false';
+			}
+		}
+	}
+	if (document.layers) {
+		document.captureEvents(Event.MOUSEDOWN);
+	}
+	document.onmousedown=click;
+	document.oncontextmenu = new Function("return false;")
+	document.onkeydown =document.onkeyup = document.onkeypress=function(){ 
+		if(window.event.keyCode == 123) { 
+			window.event.returnValue=false;
+			return(false); 
+		} 
+	}
+</script>
+-->
+<!--禁止开发者工具-->
+<!--
+<script>
+//按键触发
+document.onkeydown = function(){
+  //禁止ctrl+u
+  if (event.ctrlKey && window.event.keyCode==85){
+    return false;
+  }
+  //禁止ctrl + shift + i
+  if (window.event && window.event.keyCode == 73) {
+    event.keyCode = 0;
+    event.returnValue = false;
+  }
+  //禁止 F12
+  if (window.event && window.event.keyCode == 123) {
+    event.keyCode = 0;
+    event.returnValue = false;
+  }
+  //禁止ctrl+s
+  if (event.ctrlKey && window.event.keyCode==83){
+    return false;
+  }
+  //禁止 F5 
+  if (window.event && window.event.keyCode == 116) {
+    event.keyCode = 0;
+    event.returnValue = false;
+  }
+}
+//网站禁止右键
+document.body.oncontextmenu = function() {
+  self.event.returnValue=false
+};
+//网站禁止选择文字
+document.body.onselectstart = function() {
+  self.event.returnValue=false
+};
+//禁用图片拖放
+document.ondragstart = function(){return false};
+
+//彻底屏蔽鼠标右键|二选一
+/*
+oncontextmenu="window.event.returnvalue=false"
+<table border oncontextmenu=return(false)><td>no</table> //可用于Table
+*/
+</script>
+-->
+<!--防复制和防鼠标右键-->
+<!--
+<script language="JavaScript">
+    document.oncontextmenu = new Function('event.returnValue=false;');
+    document.onselectstart = new Function('event.returnValue=false;');
+-->
+<!--防复制和防鼠标右键|二选一-->
+<!--
+<script type="text/javascript">
+    document.body.oncontextmenu = 
+    document.body.ondragstart = 
+    document.body.onselectstart = 
+    document.body.onbeforecopy = 
+    function () { return false; };
+ 
+    document.body.onselect = 
+    document.body.oncopy = 
+    document.body.onmouseup = 
+    function () { document.selection.empty(); };
+</script>-->
+<!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
     <body id="menu" class="alt-bg">
         <!--[if lt IE 8]>
             <p class="browsehappy">您正在使用<strong>过时的</strong>浏览器。请 <a href="https://browsehappy.com/">升级浏览器</a> 以改善您的体验。</p>
