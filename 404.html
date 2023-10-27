@@ -1,0 +1,121 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <title>041专属 - 网页不见了...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="favicon.png" >
+    <link rel="Bookmark" href="favicon.png">
+    <link rel="stylesheet" href="https://lsy041.eu.org/丢失/css/mdui.min.css">
+    <link rel="stylesheet" href="https://lsy041.eu.org/丢失/css/main.css">
+    <link rel="stylesheet" href="https://lsy041.eu.org/丢失/css/index.css">
+</head>
+<body>
+    <!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
+<!--这部分是字体-->
+<style>@font-face{font-family: 'zti';src: url('//lsy041.eu.org/style/小可爱.ttc');}body{font-family:'zti' !important;}</style>
+<!--复制提2-->
+<script src="//lsy041.eu.org/style/js/copyvue.js"></script>
+<script src="//lsy041.eu.org/style/js/copyfour.js"></script>
+<link rel="stylesheet"  href="style/css/copyfour.css">
+<script>document.addEventListener("copy",function(e){ new Vue({data:function(){this.$notify({title:"复制成功！",message:"若要转载请保留原文链接！mua~",position: 'bottom-right', offset: 50,showClose: false,type:"success"});return{visible:false}}})})</script>
+<!--顶部标题-->
+<script>
+var OriginTitile = document.title,
+titleTime;
+document.addEventListener("visibilitychange",
+function() {
+    if (document.hidden) {
+        document.title = "你别走吖~ Σ(っ °Д °;)っ";
+        clearTimeout(titleTime)
+    } else {
+        document.title = "欢迎回来！(/≧▽≦/)o" ;
+        titleTime = setTimeout(function() {
+            document.title = OriginTitile
+        },
+        2000)
+    }
+});
+</script>
+<!--禁用开发者模式js-->
+<script disable-devtool-auto src='//lsy041.eu.org/style/js/disable-devtool.min.js'></script>
+<!--禁用开发者模式-->
+<script>
+//调用开发者debugger模式
+setInterval(function () {
+            check()
+        }, 1000);
+        var check = function () {
+            function doCheck(a) {
+                if (("" + a / a)["length"] !== 1 || a % 20 === 0) {
+                    (function () { }
+                    ["constructor"]("debugger")())
+                } else {
+                    (function () { }
+                    ["constructor"]("debugger")())
+                }
+                doCheck(++a)
+            }
+            try {
+                doCheck(0)
+            } catch (err) { }
+        };
+        check(); 
+</script>
+<!--禁止开发者工具-->
+<script>
+//按键触发
+document.onkeydown = function(){
+  //禁止ctrl+u
+  if (event.ctrlKey && window.event.keyCode==85){
+    return false;
+  }
+  //禁止ctrl + shift + i
+  if (window.event && window.event.keyCode == 73) {
+    event.keyCode = 0;
+    event.returnValue = false;
+  }
+  //禁止 F12
+  if (window.event && window.event.keyCode == 123) {
+    event.keyCode = 0;
+    event.returnValue = false;
+  }
+  //禁止ctrl+s
+  if (event.ctrlKey && window.event.keyCode==83){
+    return false;
+  }
+  //禁止 F5 
+  if (window.event && window.event.keyCode == 116) {
+    event.keyCode = 0;
+    event.returnValue = false;
+  }
+}
+//网站禁止右键
+document.body.oncontextmenu = function() {
+  self.event.returnValue=false
+};
+//网站禁止选择文字
+document.body.onselectstart = function() {
+  self.event.returnValue=false
+};
+//禁用图片拖放
+document.ondragstart = function(){return false};
+</script>
+<!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
+<div id="rin-bg"></div>
+<main id="rin-main">
+    <div class="rin-name">4&nbsp;&nbsp;0&nbsp;&nbsp;4</div>
+    <div class="rin-description">「网页不见了呐~」</div>
+    <div class="rin-tr"></div>
+    <a class="mdui-btn mdui-btn-raised rin-btn mdui-text-capitalize" href="https://lsy041.eu.org" target="_blank">出现此页面则代表此网页已被删除或此网页不存在！</a><br>
+	<a class="mdui-btn mdui-btn-raised rin-btn mdui-text-capitalize" href="javascript:history.go(-1);" >返回上一页，找找其他的吧~</a>
+</main>
+<footer id="rin-footer">
+    <div>
+	<font style="width:300px;margin:0 auto; padding:20px 0;font-size:16px"><img src="https://icp.gov.moe/favicon.ico" style="width:25px;height:25px;margin-bottom:-5px"/>
+<a target="_blank" href="https://icp.gov.moe" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span></a><a href="https://icp.gov.moe/?keyword=20224041" target="_blank" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;" > <span style="color:#ff0000">20</span><span style="color:#ca7900">22</span><span style="color:#48ab18">40</span><span style="color:#2720ac">41</span><span style="color:#f40428">号</span></a></font><br>
+<span style="color:#48ab18">Copyright</span> <span style="color:#ff0000">041专属</a></span> <span style="color:#9b17ae"> &copy;</span><span style="color:#ca7900"><script>document.write(new Date().getFullYear())</script></span><span style="color:#2720ac"> All Rights Reserved</span>
+	<br>&nbsp;
+</footer>
+<script src="丢失/javascript/mdui.min.js"></script>
+</body>
+</html>
